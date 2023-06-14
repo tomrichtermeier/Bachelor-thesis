@@ -8,7 +8,7 @@ This repository contains the code for de novo assembling aDNA of palaeofaeces an
 
 ## Information
 
-Author: Tom Richtermeier
-Supervisor: Alexander Hübner (@alexhbnr), Irina Velsko(@ivelsko)
-Desired degree: Bachelor in Biotechnology
-Institute: Max Planck Institute for Evolutionary Anthropology
+- Author: Tom Richtermeier
+- Supervisor: Alexander Hübner (@alexhbnr), Irina Velsko(@ivelsko)
+- Desired degree: Bachelor in Biotechnology
+- Institute: Max Planck Institute for Evolutionary Anthropology
