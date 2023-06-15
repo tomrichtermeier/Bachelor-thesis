@@ -12,8 +12,8 @@ import pandas as pd
 if not os.path.isdir("snakemake_tmp"):
     os.makedirs("snakemake_tmp")
 
-os.environ["OPENBLAS_NUM_THREADS"] = 1
-os.environ["OMP_NUM_THREADS"] = 1
+os.environ["OPENBLAS_NUM_THREADS"] = '1'
+os.environ["OMP_NUM_THREADS"] = '1'
 
 #### SAMPLES ###################################################################
 eager_tbl = pd.read_csv("01-documentation/nfcore_eager_samplesheet.tsv", sep="\t")
