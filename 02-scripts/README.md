@@ -34,3 +34,11 @@ snakemake -s 02-scripts/PREP_remove_hostDNA.Snakefile --use-conda --conda-prefix
 ### MetaPhlAn4
 - `COMP_MetaPhlAn4.Snakefile`
 - `ENVS_MetaPhlAn4.yaml`
+Create environment:
+```
+snakemake -s 02-scripts/COMP_MetaPhlAn4.Snakefile --use-conda --conda-prefix conda --profile sge_archgenq --cores 10 -j 8 --latency-wait 60 --conda-create-envs-only
+```
+Start programm:
+```
+snakemake -s 02-scripts/COMP_MetaPhlAn4.Snakefile --use-conda --conda-prefix conda --profile sge_archgenq --cores 10 -j 8 --latency-wait 60
+```
