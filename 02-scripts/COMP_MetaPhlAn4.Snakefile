@@ -1,12 +1,11 @@
 ################################################################################
-# Project: Training project
+# Project: Bachelor thesis
 # Part: Composition analysis
 # Step: Taxonomic profiling with MetaPhlAn
-#
 # Dependent on:
 #   - PREP_remove_hostDNA.Snakefile
-#
-# Alex Huebner, 18/04/23
+# Date: 13.06.2023
+# Author: Tom Richtermeier, Alexander Hübner
 ################################################################################
 
 import os
