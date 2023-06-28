@@ -3,7 +3,7 @@
 nextflow run nf-core/mag \
     -r 2.3.2 \
     -profile eva,archgen \
-    --input samplesheet.csv \
+    --input /mnt/archgen/users/richtermeier/bachelor_thesis/01-documentation/samplesheet_mag.csv \
     --outdir 04-analysis/assembly/megahit \
     --skip_clipping \
     --skip_spades \
@@ -19,7 +19,7 @@ nextflow run nf-core/mag \
 nextflow run nf-core/mag \
     -r 2.3.2 \
     -profile eva,archgen \
-    --input samplesheet.csv \
+    --input /mnt/archgen/users/richtermeier/bachelor_thesis/01-documentation/samplesheet_mag.csv \
     --outdir 04-analysis/assembly/metaspades \
     --skip_clipping \
     --spades_options "-k 21,33,55,77" \
