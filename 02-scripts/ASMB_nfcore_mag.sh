@@ -12,7 +12,7 @@ nextflow run nf-core/mag \
     --skip_prokka \
     --skip_binqc \
     --ancient_dna \
-    -c nfcore_mag.conf
+    -c /mnt/archgen/users/richtermeier/bachelor_thesis/01-documentation/nfcore_mag.conf
 
 # De novo assembly without contig-correction using metaSPAdes
 
@@ -29,4 +29,4 @@ nextflow run nf-core/mag \
     --skip_prokka \
     --skip_binqc \
     --ancient_dna --skip_ancient_damagecorrection \
-    -c nfcore_mag.conf
+    -c /mnt/archgen/users/richtermeier/bachelor_thesis/01-documentation/nfcore_mag.conf
