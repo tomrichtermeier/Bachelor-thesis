@@ -1,0 +1,9 @@
+sample,group,short_reads_1,short_reads_2,long_reads
+SRR12557734,SRS5300636,/mnt/archgen/users/richtermeier/bachelor_thesis/03-data/processed_data/SRR12557734_1.fastq.gz,/mnt/archgen/users/richtermeier/bachelor_thesis/03-data/processed_data/SRR12557734_2.fastq.gz,
+SRR12557733,SRS5300648,/mnt/archgen/users/richtermeier/bachelor_thesis/03-data/processed_data/SRR12557733_1.fastq.gz,/mnt/archgen/users/richtermeier/bachelor_thesis/03-data/processed_data/SRR12557733_2.fastq.gz,
+SRR12557722,SRS5300659,/mnt/archgen/users/richtermeier/bachelor_thesis/03-data/processed_data/SRR12557722_1.fastq.gz,/mnt/archgen/users/richtermeier/bachelor_thesis/03-data/processed_data/SRR12557722_2.fastq.gz,
+SRR12557711,SRS5300666,/mnt/archgen/users/richtermeier/bachelor_thesis/03-data/processed_data/SRR12557711_1.fastq.gz,/mnt/archgen/users/richtermeier/bachelor_thesis/03-data/processed_data/SRR12557711_2.fastq.gz,
+SRR12557707,SRS5300667,/mnt/archgen/users/richtermeier/bachelor_thesis/03-data/processed_data/SRR12557707_1.fastq.gz,/mnt/archgen/users/richtermeier/bachelor_thesis/03-data/processed_data/SRR12557707_2.fastq.gz,
+SRR12557706,SRS5300670,/mnt/archgen/users/richtermeier/bachelor_thesis/03-data/processed_data/SRR12557706_1.fastq.gz,/mnt/archgen/users/richtermeier/bachelor_thesis/03-data/processed_data/SRR12557706_2.fastq.gz,
+SRR12557705,SRS5300669,/mnt/archgen/users/richtermeier/bachelor_thesis/03-data/processed_data/SRR12557705_1.fastq.gz,/mnt/archgen/users/richtermeier/bachelor_thesis/03-data/processed_data/SRR12557705_2.fastq.gz,
+SRR12557704,SRS5300638,/mnt/archgen/users/richtermeier/bachelor_thesis/03-data/processed_data/SRR12557704_1.fastq.gz,/mnt/archgen/users/richtermeier/bachelor_thesis/03-data/processed_data/SRR12557704_2.fastq.gz,
