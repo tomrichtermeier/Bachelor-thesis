@@ -43,8 +43,10 @@ Start programm:
 snakemake -s 02-scripts/COMP_MetaPhlAn4.Snakefile --use-conda --conda-prefix conda --profile sge_archgenq --cores 10 -j 8 --latency-wait 60
 ```
 ## de novo assembly
-###nf-core mag with MEGAHIT and metaSPAdes
-
+### nf-core mag with MEGAHIT and metaSPAdes
+- `samplesheet_mag.csv`
+- `ASMB_nfcore_mag.sh`
+- `ENVS_taxpasta.yaml`
 ```
 bash 02-scripts/ASMB_nfcore_mag.sh
 ```
