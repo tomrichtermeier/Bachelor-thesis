@@ -15,11 +15,11 @@ nextflow run nf-core/eager -r 2.4.6 \
 	--bwa_index '/mnt/archgen/Reference_Genomes/Human/hs37d5' \
 	--seq_dict '/mnt/archgen/Reference_Genomes/Human/hs37d5/hs37d5.dict' \
 	--skip_preseq \
-        --skip_deduplication \
-        --skip_damage_calculation \
-        --skip_qualimap \
+	--skip_deduplication \
+	--skip_damage_calculation \
+	--skip_qualimap \
 	--skip_collapse \
-        --complexity_filter_poly_g \
+	--complexity_filter_poly_g \
 	--bwaalno 1 --bwaalnl 32 \
 	--outdir '04-analysis-eager' 
 ```
