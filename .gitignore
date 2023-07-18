@@ -20,4 +20,5 @@ conda_environment.yml
 work
 taxa2core.txt
 taxa2core_cpa201901_up201901.txt.bz2
-taxa2core_cpa201901_up201901.txt.bz2	
+taxa2core_cpa201901_up201901.txt.bz2
+genome_assembly_test	
