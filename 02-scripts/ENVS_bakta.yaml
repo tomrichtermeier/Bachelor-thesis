@@ -1,0 +1,7 @@
+name: BAKTA
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - bioconda::bakta=1.7

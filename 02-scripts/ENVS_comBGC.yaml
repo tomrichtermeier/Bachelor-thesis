@@ -1,0 +1,9 @@
+name: comBGC
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - conda-forge::python=3.11.0
+  - conda-forge::biopython=1.80
+  - conda-forge::pandas=1.5.2
