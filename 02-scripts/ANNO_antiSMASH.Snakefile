@@ -15,7 +15,7 @@ os.environ["OMP_NUM_THREADS"] = '1'
 
 #### SAMPLES ###################################################################
 SAMPLES = {os.path.basename(fn).split("-")[0]: fn
-           for fn in glob("/mnt/archgen/users/richtermeier/bachelor_thesis/genome_assembly_test/ancient_metagenome_assembly/results_assembly/alignment/megahit/*-megahit.fasta.gz")}
+           for fn in glob("/mnt/archgen/users/richtermeier/bachelor_thesis/04-analysis/snakemake/results_assembly/alignment/megahit/*-megahit.fasta.gz")}
 ################################################################################
 
 rule all:
@@ -66,7 +66,7 @@ rule bakta:
     message: "Annotate contigs using BAKTA: {wildcards.sample}"
     container: "/mnt/archgen/tools/singularity/containers/depot.galaxyproject.org-singularity-bakta-1.7.0--pyhdfd78af_0.img"
     resources:
-        mem = 128,
+        mem = 200,
         cores = 8
     params:
         prefix = lambda wildcards: wildcards.sample,
