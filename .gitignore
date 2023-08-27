@@ -15,11 +15,10 @@ conda_environment.yml
 .nextflow.log.7
 .nextflow.log.8
 .nextflow.log.9
-.nextflow.log.10
 .nextflow/
 work
 taxa2core.txt
 taxa2core_cpa201901_up201901.txt.bz2
 taxa2core_cpa201901_up201901.txt.bz2
 genome_assembly_test
-.cache	
+.cache
