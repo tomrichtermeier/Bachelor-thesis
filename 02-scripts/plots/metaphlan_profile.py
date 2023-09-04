@@ -14,14 +14,12 @@ import pandas as pd
 data = pd.read_csv("/mnt/archgen/users/richtermeier/bachelor_thesis/05-results/COMP_MetaPhlAn4_species_profiles.tsv", sep='\t')
 df = pd.DataFrame(data)
 
-columns=['clade_name', 'relative_abundance']
+columns=['sample','clade_name', 'relative_abundance']
 genus = df[columns].copy()
 genus['clade_name'] = genus['clade_name'].str.extract(r'p__(.*?)\|')
-genus_avg = genus.groupby('clade_name')['relative_abundance'].mean().reset_index()
-genus_avg= genus_avg.sort_values('relative_abundance', ascending=False)
-
-genus_avg.at[2, 'clade_name'] = 'unclassified'
-
+genus_avg = genus.groupby(['sample', 'clade_name'])['relative_abundance'].sum().groupby('clade_name').mean()
+genus_avg = pd.DataFrame(genus_avg)
+genus_avg = genus_avg.sort_values('relative_abundance', ascending=False)
 
 
 fig, ax = plt.subplots()
@@ -33,3 +31,4 @@ ax.spines[['top','right']].set_visible(False)
 
 plt.rcParams['figure.dpi']=500
 plt.show()
+
