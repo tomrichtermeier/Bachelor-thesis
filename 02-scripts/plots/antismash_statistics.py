@@ -158,3 +158,24 @@ for i, file_path in enumerate(file_paths):
     contigs = set(data['contig'].tolist())
     number = df['Contig_ID'].isin(contigs).sum()
     binned_contigs.at[i, 'binned'] = number
+
+
+### number of ancient AND complete contigs
+
+data = pd.read_csv(
+    "/Users/tomrichtermeier/Documents/bachelor_results/data/FUNC_antiSMASH.tsv", sep='\t')
+df = pd.DataFrame(data)
+
+complete_contigs = df.iloc[:, [0, 2, 3, 5, 8]]
+complete_contigs = complete_contigs[complete_contigs['BGC_complete'] == 'Yes']
+
+data = pd.read_csv(
+    '/Users/tomrichtermeier/Documents/bachelor_results/data/QUAL_pyDamage_results_BGCcontigs.tsv', sep='\t')
+df = pd.DataFrame(data)
+
+ancient_contigs = df.iloc[:, [0,1,2,12]]
+ancient_contigs = ancient_contigs[(ancient_contigs['predicted_accuracy']>= 0.5) & (ancient_contigs['qvalue']<= 0.05)]
+ancient_contigs['Contig_ID'] = ancient_contigs['reference']
+
+merged_df = complete_contigs.merge(ancient_contigs, on='Contig_ID', how='inner')
+print(merged_df['Sample_ID'].value_counts())
